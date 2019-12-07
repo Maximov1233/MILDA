@@ -1,0 +1,102 @@
+$middle-red: #fb3b46;
+$light-red: #EE3D48;
+$main-red: #ED1C24;
+$main-grey: #383E3C;
+$light-grey: #414042;
+$button-shadow: #EE3D48;
+$white: #ffffff;
+$black: #000000;
+
+.section-title {
+    margin-bottom: 25px;
+    h2 {
+        font-size: 35px;
+        font-weight: 800;
+    }
+     
+}
+
+section {
+    padding: 2rem 0;
+}
+
+span {
+    color: $light-red;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main {
+    color: $light-grey;
+    .introducing {
+        padding: 2rem 0;
+        background: url(../img/introducing/bg.svg) center top;
+        .container {
+            .introducing-text {
+                h2 {
+                    font-size: 35px;
+                    font-weight: 800;
+                    
+                }
+                p {
+                    max-width: 32%;
+                }
+            }
+        }
+    }
+    .steps {
+        .container {
+            .section-title {
+                margin-bottom: 50px;
+            }
+            .steps-cards {
+                display: flex;
+                justify-content: space-between;
+                .card {
+                    position: relative;
+                    color: $white;
+                    width: 270px;
+                    height: 170px;
+                    background: $light-red;
+                    box-shadow: 0px 8px 10px rgba(181, 0, 2, 0.25);
+                    border-radius: 50px;
+                    p:first-child {
+                        padding: 0;
+                        font-size: 65px;
+                        margin-left: 10px;
+                    }
+                    p {
+                        padding: 10px 0 0 24px;
+                    }
+                    img {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;  
+                    }
+                }
+            }
+        }
+    }
+    .portfolio {
+        .container {
+            .portfolio-text {
+                p {
+                    margin-bottom: 25px;
+                }
+            }
+            .portfolio-video {
+                .portfolio-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        margin-left: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

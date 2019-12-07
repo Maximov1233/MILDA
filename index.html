@@ -4,9 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MILDA</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-logo">
+                    <a href="/">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul>
+                            <li class="header-nav__item">
+                                <a href="/">Главная</a> 
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="/">О нас</a> 
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="/">Цены</a> 
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="/">Проекты</a>   
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="/">Контакты</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                
+            </div>
+            <div class="header-content">
+                <div class="offer">
+                    <h1>Разработка <span>сайта</span> для любого бизнеса 
+                     с персональным дизайном</h1>
+
+                    <p>Увеличиваем прибыль вашей компании за счет, современного и умного дизайна + правильной настройки рекламы на целевую аудиторию</p>
+
+                    <button class="button offer-button">Оставить заявку</button>
+                </div>
+                
+            </div>
+            <div class="scroll">
+                    <p>Листайте вниз</p>
+                    <img src="./img/стрелочка.svg" alt="">
+                </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="introducing">
+            <div class="container">
+                <div class="introducing-text">
+                    <h2>Кто <span>мы</span> такие?</h2>
+                    <p>MILDA - студия полного цикла. Делаем дизайн, сайты и настраиваем рекламу. Мы знаем как привести больше клиентов в ваш бизнес, и самое главное делаем все, чтобы они купили!</p>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Этапы работы</h2>
+                </div>
+                <div class="steps-cards">
+                    <div class="card">
+                        
+                        <p>01</p>
+                        <p>Обсуждение проекта и желаний клиента</p>
+                        <img src="./img/steps/Круг.svg" alt="">
+                    </div>
+                    <div class="card">
+                        
+                        <p>02</p>
+                        <p>Составление ТЗ, заключение договора</p>
+                        <img src="./img/steps/Круг.svg" alt="">
+                    </div>
+                    <div class="card">
+                        
+                        <p>03</p>
+                        <p>Создание дизайн-макета будущего сайта</p>
+                        <img src="./img/steps/Круг.svg" alt="">
+                    </div>
+                    <div class="card">
+                        
+                        <p>04</p>
+                        <p>Разработка сайта по макету и сдача проекта </p>
+                        <img src="./img/steps/Круг.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Портфолио</h2>
+                </div>
+                <div class="portfolio-text">
+                    <p>Мы собрали для вас наши  <span>лучшие</span> работы и оформили их ввиде презентации, нажмите на кнопку ниже, чтобы <span>открыть</span> портфолио </p>
+                </div>
+                <div class="portfolio-video">
+                    <button class="portfolio-button button">Смотреть работы <img src="./img/porfolio/play-button 1.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/main.js"></script>
 </body>
 </html>

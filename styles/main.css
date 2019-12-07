@@ -1,0 +1,100 @@
+.section-title {
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+span {
+  color: #EE3D48;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main {
+  color: #414042;
+}
+
+.main .introducing {
+  padding: 2rem 0;
+  background: url(../img/introducing/bg.svg) center top;
+}
+
+.main .introducing .container .introducing-text h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.main .introducing .container .introducing-text p {
+  max-width: 32%;
+}
+
+.main .steps .container .section-title {
+  margin-bottom: 50px;
+}
+
+.main .steps .container .steps-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .steps .container .steps-cards .card {
+  position: relative;
+  color: #ffffff;
+  width: 270px;
+  height: 170px;
+  background: #EE3D48;
+  -webkit-box-shadow: 0px 8px 10px rgba(181, 0, 2, 0.25);
+          box-shadow: 0px 8px 10px rgba(181, 0, 2, 0.25);
+  border-radius: 50px;
+}
+
+.main .steps .container .steps-cards .card p:first-child {
+  padding: 0;
+  font-size: 65px;
+  margin-left: 10px;
+}
+
+.main .steps .container .steps-cards .card p {
+  padding: 10px 0 0 24px;
+}
+
+.main .steps .container .steps-cards .card img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main .portfolio .container .portfolio-text p {
+  margin-bottom: 25px;
+}
+
+.main .portfolio .container .portfolio-video .portfolio-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .portfolio .container .portfolio-video .portfolio-button img {
+  margin-left: 23px;
+}
+/*# sourceMappingURL=main.css.map */
