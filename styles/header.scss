@@ -6,6 +6,9 @@ $main-red: #ED1C24;
 $main-grey: #383E3C;
 $light-grey: #414042;
 $button-shadow: #EE3D48;
+$price-bg: #FBFBFB;
+$deadline-color: #D6D6D6;
+$body-bg: #FAFAFA;
 $white: #ffffff;
 $black: #000000;
 
@@ -45,12 +48,12 @@ button {
     padding: 10px 15px;
     box-shadow: 0px 5px 12px $button-shadow;
 border-radius: 50px;
+cursor: pointer;
 
 }
 
 body {
-    height: 800rem;
-    background: #FAFAFA;
+    background: $body-bg;
     font-family: 'Montserrat', sans-serif;
     .container {
         width: 100%;

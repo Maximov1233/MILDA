@@ -36,10 +36,10 @@ button {
   -webkit-box-shadow: 0px 5px 12px #EE3D48;
           box-shadow: 0px 5px 12px #EE3D48;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 body {
-  height: 800rem;
   background: #FAFAFA;
   font-family: 'Montserrat', sans-serif;
 }
