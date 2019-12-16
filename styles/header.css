@@ -24,6 +24,15 @@ a {
   }
 }
 
+.hide {
+  display: none;
+}
+
+.ov-h {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 button {
   font-family: 'Montserrat', sans-serif;
   border: none;
@@ -53,8 +62,8 @@ body .container {
 }
 
 body .header {
-  padding: 2rem 0 5rem;
-  background: url(../img/header-right.svg) no-repeat top right 10%;
+  padding: 2rem 0;
+  background: url(../img/header-right.svg) no-repeat top 10% right 10%;
 }
 
 body .header .container .header-top {
@@ -150,5 +159,95 @@ body .header .container .scroll p {
   margin-bottom: 10px;
   color: #414042;
   font-size: 15px;
+}
+
+body .header .header-modal {
+  width: 50%;
+  height: 800px;
+  background: #FAFAFA;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3%;
+  -webkit-box-shadow: 20px 20px 50px rgba(65, 64, 66, 0.25);
+          box-shadow: 20px 20px 50px rgba(65, 64, 66, 0.25);
+  border-radius: 50px 0px 0px 50px;
+  position: relative;
+}
+
+body .header .header-modal .header-nav ul li {
+  margin-bottom: 5px;
+}
+
+body .header .header-modal .header-nav ul li h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+body .header .header-modal .consulting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .header .header-modal .consulting-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .header .header-modal .consulting-text p {
+  font-size: 34px;
+}
+
+body .header .header-modal .consulting .form {
+  min-width: 100%;
+}
+
+body .header .header-modal .consulting .form-input {
+  min-width: 100%;
+}
+
+body .header .header-modal .consulting .form-button {
+  display: block;
+  margin: auto;
+}
+
+body .header .header-modal .modal-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+body .header .header-modal__bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 /*# sourceMappingURL=header.css.map */

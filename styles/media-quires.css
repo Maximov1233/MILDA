@@ -1,1 +1,209 @@
-/* No CSS *//*# sourceMappingURL=media-quires.css.map */
+@charset "UTF-8";
+@media (max-width: 1441px) {
+  body .header {
+    background: url(../img/header-right.svg) no-repeat top 10% right 10%;
+  }
+  body .main .introducing {
+    background: url(../img/introducing/Самурай.svg) no-repeat bottom right 20%;
+  }
+  body .main .price-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1061px) {
+  body .main .reviews .container .reviews-slider .review-window {
+    width: 600px;
+  }
+  body .main .reviews .container .reviews-slider .review-window .reviews-list .review {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1025px) {
+  body .header {
+    background: none;
+  }
+  body .header .container .header-top {
+    margin-bottom: 50px;
+  }
+  body .header .container .header-top .header-nav {
+    display: none;
+  }
+  body .header .container .header-content .offer {
+    margin-bottom: 100px;
+  }
+  body .header .container .header-content .offer h1 {
+    max-width: 67%;
+  }
+  body .header .container .header-content .offer p {
+    max-width: 61%;
+  }
+  body .main .steps .container .steps-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .main .steps .container .steps-cards .card {
+    margin-bottom: 1rem;
+  }
+  body .main .feedback {
+    background: url(../img/feedback/речка.svg) no-repeat top 40% right 12%;
+  }
+}
+
+@media (max-width: 769px) {
+  body .header .container .header-content .offer {
+    margin-bottom: 50px;
+  }
+  body .header .container .header-content .offer h1 {
+    max-width: 94%;
+  }
+  body .header .container .header-content .offer p {
+    max-width: 84%;
+  }
+  body .main .introducing .container .introducing-text p {
+    max-width: 54%;
+  }
+  body .main .reasons .container .section-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header .container .header-top {
+    margin-bottom: 20px;
+  }
+  body .header .container .header-content .offer h1 {
+    max-width: 100%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  body .header .container .header-content .offer p {
+    max-width: 100%;
+  }
+  body .main .introducing {
+    background: none;
+  }
+  body .main .introducing .container .introducing-text p {
+    max-width: 100%;
+  }
+  body .main .steps .container .steps-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .steps .container .steps-cards .card {
+    width: 230px;
+    height: 150px;
+  }
+  body .main .steps .container .steps-cards .card p:first-child {
+    margin-left: 15px;
+    font-size: 50px;
+  }
+  body .main .price .container .price-list__item {
+    margin: 30px 0;
+  }
+  body .main .reasons .container .section-title {
+    text-align: center;
+  }
+  body .main .reasons .container .reasons-list .reason {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .reasons .container .reasons-list .reason-image {
+    display: none;
+  }
+  body .main .quotation .container .qav {
+    display: none;
+  }
+  body .main .reviews .container .reviews-slider .review-window {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .reviews .container .reviews-slider .review-window .reviews-list .review {
+    height: 200px;
+    min-width: 200px;
+  }
+  body .main .feedback {
+    background: none;
+    text-align: center;
+  }
+  body .main .feedback .container .feedback-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .feedback .container .feedback-form .form {
+    min-width: 100%;
+  }
+  body .main .feedback .container .feedback-form .form-input {
+    min-width: 100%;
+  }
+  body .footer {
+    padding: 2rem 0 1rem;
+  }
+  body .footer .container .section-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .footer .container .section-title h2 {
+    font-size: 27px;
+  }
+  body .footer .container .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .footer .container .info .connect {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0;
+  }
+  body .footer .container .info .connect .info-phone {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=media-quires.css.map */

@@ -1,0 +1,284 @@
+// colors
+
+$middle-red: #fb3b46;
+$light-red: #EE3D48;
+$main-red: #ED1C24;
+$main-grey: #383E3C;
+$light-grey: #414042;
+$button-shadow: #EE3D48;
+$price-bg: #FBFBFB;
+$deadline-color: #D6D6D6;
+$body-bg: #FAFAFA;
+$white: #ffffff;
+$black: #000000;
+
+
+
+@media(max-width: 1441px) {
+    body {
+        .header {
+            background: url(../img/header-right.svg) no-repeat top 10% right 10%;
+        }
+        .main {
+            .introducing {
+                background: url(../img/introducing/Самурай.svg) no-repeat bottom right 20%;
+            }
+            .price {
+                &-list {
+                    flex-wrap: wrap;
+                }  
+            }
+        }
+    }
+}
+
+@media (max-width: 1061px) {
+    body {
+        .main {
+            .reviews {
+                .container {
+                    .reviews-slider {
+                        .review-window {
+                            width: 600px;
+                            .reviews-list {
+                                .review {
+                                    min-width: 600px;
+                                }
+                            }
+                        }                      
+                    }
+                }
+            }
+        }
+    }     
+}
+
+@media (max-width: 1025px) {
+    body {
+        .header {
+            background: none;
+            .container {
+                .header-top {
+                    margin-bottom: 50px;
+                    .header-nav {
+                        display: none;
+                    }
+                }
+                .header-content {
+                    .offer {
+                        margin-bottom: 100px;
+                        h1 {
+                            max-width: 67%;
+                        }
+                        p {
+                            max-width: 61%;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .steps {
+                .container {
+                    .steps-cards {
+                        flex-wrap: wrap;
+                        .card {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+            .feedback {
+                background: url(../img/feedback/речка.svg) no-repeat top 40% right 12%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 769px) {
+    body {
+        .header {
+            .container {
+                .header-content {
+                    .offer {
+                        margin-bottom: 50px;
+                        h1 {
+                            max-width: 94%;
+                        }
+                        p {
+                            max-width: 84%;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .introducing {
+                .container {
+                    .introducing-text {
+                        p {
+                            max-width: 54%;
+                        }
+                    }
+                }
+            }
+            .reasons {
+                .container {
+                    .section-title {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        .header {
+            .container {
+                .header-top {
+                    margin-bottom: 20px;
+                }
+                .header-content {
+                    .offer {
+                        h1 {
+                            max-width: 100%;
+                            font-size: 30px;
+                            margin-bottom: 15px;
+                        }
+                        p {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .introducing {
+                background: none;
+                .container {
+                    .introducing-text {
+                        p {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            .steps {
+                .container {
+                    .steps-cards {
+                        justify-content: center;
+                        align-items: center;
+                        .card {
+                           width: 230px;
+                           height: 150px;
+                           p {
+                               &:first-child {
+                                   margin-left: 15px;
+                                   font-size: 50px;
+                               }
+                           }
+                        }
+                    }
+                }
+            }
+            .price {
+                .container {
+                    .price-list__item {
+                        margin: 30px 0;
+                    }
+                }
+            }  
+            .reasons {
+                .container {
+                    .section-title {
+                        text-align: center;
+                    }
+                    .reasons-list {
+                        .reason {
+                            justify-content: center;
+                            align-items: center;
+                            &-image {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .quotation {
+                .container {
+                    .qav {
+                        display: none;
+                    }
+                }
+            }
+            .reviews {
+                .container {
+                    .reviews-slider {
+                        .review-window {
+                            width: 200px;
+                            height: 200px;
+                            .reviews-list {
+                                .review {
+                                    height: 200px;
+                                    min-width: 200px;
+                                }
+                            }
+                        }
+                    }
+                }    
+            }
+            .feedback {
+                background: none;
+                text-align: center;
+                .container {
+                    .feedback-form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .form {
+                            min-width: 100%;
+                            &-input {
+                                min-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding: 2rem 0 1rem;
+            .container {
+                .section-title {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+                .info {
+                    flex-direction: column;
+                    
+                    .connect {
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px 0;
+                        .info-phone {
+                            margin-right: 10px; 
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+

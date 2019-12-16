@@ -8,6 +8,8 @@
     <title>MILDA</title>
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media-quires.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap&subset=cyrillic"
         rel="stylesheet">
@@ -30,21 +32,21 @@
                                 <a href="/">Главная</a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="/">О нас</a>
+                                <a href="#introducing">О нас</a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="/">Цены</a>
+                                <a href="#price">Цены</a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="/">Проекты</a>
+                                <a href="#portfolio">Проекты</a>
                             </li>
                             <li class="header-nav__item">
-                                <a href="/">Контакты</a>
+                                <a href="#footer">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-hamburger">
+                <div class="header-hamburger modal-opener">
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
@@ -58,7 +60,7 @@
                     <p>Увеличиваем прибыль вашей компании за счет, современного и умного дизайна + правильной настройки
                         рекламы на целевую аудиторию</p>
 
-                    <button class="button offer-button">Оставить заявку</button>
+                    <button class="button offer-button modal-opener">Оставить заявку</button>
                 </div>
 
             </div>
@@ -66,19 +68,93 @@
                 <p>Листайте вниз</p>
                 <img src="./img/стрелочка.svg" alt="">
             </div>
+            <div class="header-modal__bg hide animated">
+                <div class="header-modal animated zoomIn">
+                    <div class="header-nav">
+                        <nav>
+                            <ul>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="/">Главная</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#introducing">О нас</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#portfolio">Проекты</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#steps">Этапы работы</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#price">Цены</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#reasons">Почему мы</a>
+                                    </h2>
+
+                                </li>
+                                <li class="header-nav__item">
+                                    <h2>
+                                        <a href="#footer">Контакты</a>
+                                    </h2>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="consulting">
+                        <div class="consulting-text">
+                            <p>Готовы проконсультировать вас по любому вопросу совершенно бесплатно</p>
+                        </div>
+
+                        <form class="form">
+                            <label>Имя</label>
+                            <input class="form-input" type="text">
+                            <label>Телефон</label>
+                            <input class="form-input" type="text">
+                            <label>Почта</label>
+                            <input class="form-input" type="text">
+                            <button class="button form-button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="modal-close zoomOut">
+                        <img src="./img/крестик.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
     <main class="main">
-        <section class="introducing">
+
+        <section class="introducing" id="introducing">
             <div class="container">
-                <div class="introducing-text">
+                <div class="section-title">
                     <h2>Кто <span>мы</span> такие?</h2>
+                </div>
+                <div class="introducing-text">
                     <p>MILDA - студия полного цикла. Делаем дизайн, сайты и настраиваем рекламу. Мы знаем как привести
                         больше клиентов в ваш бизнес, и самое главное делаем все, чтобы они купили!</p>
                 </div>
             </div>
         </section>
-        <section class="steps">
+
+        <section class="steps" id="steps">
             <div class="container">
                 <div class="section-title">
                     <h2>Этапы работы</h2>
@@ -111,7 +187,8 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-title">
                     <h2>Портфолио</h2>
@@ -126,7 +203,8 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+
+        <section class="price" id="price">
             <div class="container">
                 <div class="section-title">
                     <h2>Прайс</h2>
@@ -202,7 +280,7 @@
             </div>
         </section>
 
-        <section class="reasons">
+        <section class="reasons" id="reasons">
             <div class="container">
                 <div class="section-title">
                     <h2>Почему нужно работать с нами?</h2>
@@ -254,11 +332,11 @@
             </div>
         </section>
 
-        <section class="quotation">
+        <section class="quotation" id="quotation">
             <div class="container">
+                <p class="qav">“</p>
                 <div class="quote">
                     <div class="quote-text">
-                        <p>“</p>
                         <h4>
                             Если Вашего бизнеса нет в Интернете, то Вас нет в бизнесе!
                         </h4>
@@ -271,7 +349,7 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <div class="section-title">
                     <h2>Отзывы</h2>
@@ -280,18 +358,25 @@
                     <div class="left-arrow">
                         <img src="./img/reviews/left-arrow.svg" alt="">
                     </div>
-
                     <div class="review-window">
-                        <div class="review">
-                            <div class="reviews-text">
-                                <p>Отзыв1</p>
+                        <div class="reviews-list">
+                            <div class="review" id="last">
+                                <div class="reviews-text">
+                                    <p>Отзыв1</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="reviews-text">
+                                    <p>Отзыв2</p>
+                                </div>
+                            </div>
+                            <div class="review" id="first">
+                                <div class="reviews-text">
+                                    <p>Отзыв3</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="review">
-                            <div class="reviews-text">
-                                <p>Отзыв2</p>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="right-arrow">
                         <img src="./img/reviews/right-arrow.svg" alt="">
@@ -300,7 +385,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="section-title">
                     <h2>Давайте знакомиться!</h2>
@@ -317,7 +402,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="section-title">
                 <h2>Работаем по всей России,</h2>
@@ -335,30 +420,25 @@
 
                 <div class="social-sites">
                     <div class="facebook">
-                        <img src="./img/footer/facebook-logo.svg" alt="">
+                        <a href="/">
+                            <img src="./img/footer/facebook-logo.svg" alt="">
+                        </a>
                     </div>
                     <div class="vk">
-                        <img src="./img/footer/vk-social-network-logo.svg" alt="">
+                        <a href="/">
+                            <img src="./img/footer/vk-social-network-logo.svg" alt="">
+                        </a>
                     </div>
                     <div class="twitter">
-                        <img src="./img/footer/instagram-logo.svg" alt="">
+                        <a href="/">
+                            <img src="./img/footer/instagram-logo.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="./img/introducing/Красное солнце.svg" id="last" alt="">
-            <img src="./img/introducing/Самурай.svg" alt="">
-            <img src="./img/introducing/Самурай.svg" alt="">
-            <img src="./img/introducing/Красное солнце.svg" id="first" alt="">
-        </div>
-    </div>
-
-    <button class="prevBtn">prevbtn</button>
-    <button class="nextBtn">nextbtn</button>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./src/main.js"></script>
 </body>
 
