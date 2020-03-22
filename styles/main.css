@@ -4,12 +4,12 @@
 }
 
 .section-title h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 800;
 }
 
 section {
-  padding: 2rem 0;
+  padding: 50px 0;
 }
 
 span {
@@ -28,23 +28,44 @@ p {
   font-weight: 600;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #EE3D48;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 20px 29px;
+  -webkit-box-shadow: 0px 5px 12px #EE3D48;
+          box-shadow: 0px 5px 12px #EE3D48;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .main {
   color: #414042;
 }
 
 .main .introducing {
-  padding: 2rem 0;
   background: url(../img/introducing/Самурай.svg) no-repeat top right 20%;
 }
 
 .main .introducing .container .introducing-text h2 {
-  font-size: 35px;
-  font-weight: 800;
   margin-bottom: 50px;
 }
 
 .main .introducing .container .introducing-text p {
-  max-width: 32%;
+  max-width: 41%;
 }
 
 .main .steps .container .section-title {
@@ -89,7 +110,8 @@ p {
 }
 
 .main .portfolio .container .portfolio-text p {
-  margin-bottom: 25px;
+  max-width: 51%;
+  margin-bottom: 50px;
 }
 
 .main .portfolio .container .portfolio-video .portfolio-button {
@@ -102,6 +124,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 17px;
 }
 
 .main .portfolio .container .portfolio-video .portfolio-button img {
@@ -124,12 +147,16 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .main .price .container .price-list__item {
@@ -137,71 +164,108 @@ p {
   -webkit-box-shadow: 1px 4px 20px rgba(65, 64, 66, 0.09);
           box-shadow: 1px 4px 20px rgba(65, 64, 66, 0.09);
   border-radius: 50px;
-  min-width: 340px;
-  min-height: 455px;
-  padding: 45px 38px 10px;
-  margin: 50px;
+  max-width: 270px;
+  padding: 45px 40px;
+  margin: 0 86px 60px 0;
   position: relative;
 }
 
 .main .price .container .price-list__item .cost {
-  font-size: 25px;
+  font-size: 30px;
+  min-height: 80px;
 }
 
 .main .price .container .price-list__item .cost span {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .main .price .container .price-list__item .type {
   color: #D6D6D6;
   margin-bottom: 18px;
+  min-height: 50px;
 }
 
 .main .price .container .price-list__item ul {
-  min-height: 208px;
-}
-
-.main .price .container .price-list__item ul li {
-  font-size: 18px;
-  margin-bottom: 8px;
+  min-height: 252px;
 }
 
 .main .price .container .price-list__item ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.main .price .container .price-list__item ul li:before {
+.main .price .container .price-list__item ul li::before {
   position: absolute;
   top: 8px;
-  margin: 8px 0 0 -12px;
-  vertical-align: middle;
-  display: inline-block;
+  left: -10px;
   width: 4px;
   height: 4px;
-  background: #ccc;
+  background: #EE3D48;
   content: "";
 }
 
 .main .price .container .price-list__item .price-button {
-  margin: 24px 0;
+  margin: 40px 0;
+  font-size: 17px;
+  padding: 10px 20px;
 }
 
 .main .price .container .price-list__item .deadline {
   color: #D6D6D6;
 }
 
+.main .price .container .price-list__item:nth-child(2) img {
+  bottom: -40px;
+  right: -50px;
+}
+
+.main .price .container .price-list__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.main .price .container .price-list__item:last-child {
+  min-width: 100%;
+  min-height: 0;
+  margin-right: 60px;
+  margin-bottom: 0;
+}
+
+.main .price .container .price-list__item:last-child ul {
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .price .container .price-list__item:last-child ul li {
+  margin-right: 20px;
+}
+
+.main .price .container .price-list__item:last-child ul li::before {
+  top: 8px;
+}
+
+.main .price .container .price-list__item:last-child .price-button {
+  position: absolute;
+  top: 0;
+  right: 44px;
+}
+
 .main .price .container .price-list__item:last-child img {
-  bottom: -125px;
-  right: -14px;
+  bottom: -118px;
+  right: -61px;
 }
 
 .main .price .container .price-list__item img {
@@ -248,6 +312,10 @@ p {
 
 .main .reasons .container .reasons-list .reason-text p {
   font-size: 18px;
+}
+
+.main .reasons .container .reasons-list .reason-image img {
+  max-width: calc(100% - 2%);
 }
 
 .main .quotation .container {
@@ -316,7 +384,7 @@ p {
 }
 
 .main .reviews .container .reviews-slider .review-window {
-  border: 1px solid blue;
+  border: 1px solid #414042;
   width: 830px;
   height: 400px;
   margin: auto;
@@ -351,11 +419,11 @@ p {
 }
 
 .main .reviews .container .reviews-slider .reviews-list .review:first-child {
-  z-index: 99;
+  z-index: 98;
 }
 
 .main .feedback {
-  background: url(../img/feedback/речка.svg) no-repeat top right 12%;
+  background: url(../img/feedback/речка.svg) no-repeat top 40% right 12%;
   padding: 2rem 0 4rem;
 }
 
@@ -374,30 +442,10 @@ p {
   border: none;
   border-bottom: 1px solid #414042;
   font-size: 16px;
+  background: transparent;
   padding-bottom: 25px;
   outline: none;
-  margin-bottom: 20px;
-  min-width: 40%;
-}
-
-.main .feedback .container .feedback-form .form-input::-webkit-input-placeholder {
-  color: #000000;
-}
-
-.main .feedback .container .feedback-form .form-input:-ms-input-placeholder {
-  color: #000000;
-}
-
-.main .feedback .container .feedback-form .form-input::-ms-input-placeholder {
-  color: #000000;
-}
-
-.main .feedback .container .feedback-form .form-input::placeholder {
-  color: #000000;
-}
-
-.main .feedback .container .feedback-form .form-button {
-  padding: 15px 70px;
+  margin-bottom: 50px;
 }
 
 .form-input {
@@ -435,10 +483,6 @@ p {
 
 .form-input::placeholder {
   color: #000000;
-}
-
-.form-button {
-  padding: 15px 70px;
 }
 
 .footer {

@@ -8,11 +8,8 @@ const reviewWindow = document.querySelector('.reviews-list'),
 
 let counter = 1;
 
-//reviewWindow.style.transform = `translateX(${-size * counter}px)`;
-
 nextBtn.addEventListener('click', () => {
-    
-    // if (counter >= reviews.length) return;
+    if (counter >= reviews.length) return;
     reviewWindow.style.transition = `transform 0.4s ease-in-out`; 
     
     reviewWindow.style.transform = `translateX(${-size * counter}px)`;
@@ -24,57 +21,68 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-    // if (counter <= 0) return;
+    if (counter == 1) return;
     reviewWindow.style.transition = `transform 0.4s ease-in-out`;
     counter--;
     reviewWindow.style.transform = `translateX(${size * (-counter + 1)}px)`;
     reviews.forEach((review) => {
         review.style.zIndex = ``;
     });
-    reviews[counter - 1].style.zIndex = `99`; 
+    reviews[counter - 1].style.zIndex = `99`;
 });
 
+// modal
 
-// reviewWindow.addEventListener('transitionend', () => {
-    
-//     if (reviews[counter].id === 'last') {
-//         reviewWindow.style.transition = 'none';
-//         counter = reviews.length -2;
-//         reviewWindow.style.transform = `translateX(${-size * counter}px)`;
-//     } else if (reviews[counter].id === 'first') {
-//         reviewWindow.style.transition = 'none';
-//         counter = reviews.length - counter;
-//         reviewWindow.style.transform = `translateX(${-size * counter}px)`;
-//     }
-// });
+const modalBg      = document.querySelector('.header-modal__bg'),
+    modal          = modalBg.querySelector('.header-modal'),
+    modalClose     = modal.querySelector('.modal-close'),
+    modalLinks     = modal.querySelectorAll('ul li'),
+    modalOpeners   = document.querySelectorAll('.modal-opener');
 
-// modal close
 
-const modalBg = document.querySelector('.header-modal__bg'),
-      modal = modalBg.querySelector('.header-modal'),
-      modalClose = modal.querySelector('.modal-close'),
-      modalOpeners = document.querySelectorAll('.modal-opener');
+const scroll = new SmoothScroll('.header-nav__item a' , {
+    speed: 400
+});
 
 modalOpeners.forEach((opener) => {
     opener.addEventListener('click', () => {
-        document.body.classList.add('ov-h');
-        modalBg.classList.remove('hide'); 
+        // document.body.classList.add('ov-h');
+        modalBg.classList.remove('hide');
+        modalBg.classList.add('visible');
+        setTimeout(() => {
+            modal.classList.remove('zoomIn');
+        }, 900); 
+       
+    });
+});
+
+modalLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        modalBg.classList.add('hide');
+        document.body.classList.remove('ov-h');
     });
 });
 
 modalClose.addEventListener('click', () => {
-    modalBg.classList.add('hide');
-    document.body.classList.remove('ov-h');
-});
-
-modalBg.addEventListener('click', () => {
-    modalBg.classList.add('hide');
-    document.body.classList.remove('ov-h');
-});
-
-const scroll = new SmoothScroll('.header-nav__item a' ,  {
-    speed: 400
-});
-
+    modal.classList.add('zoomOut');
+    setTimeout(() => {
+        modalBg.classList.add('hide');
+        document.body.classList.remove('ov-h');
+        modal.classList.remove('zoomOut');
+        modal.classList.add('zoomIn');
+    }, 500);
     
+});
 
+document.addEventListener('click', (elem) => {
+    let target = elem.target;
+    if (target == modalBg && !modalBg.classList.contains('hide')) {
+        modal.classList.add('zoomOut');
+        setTimeout(() => {
+            modalBg.classList.add('hide');
+            document.body.classList.remove('ov-h');
+            modal.classList.remove('zoomOut');
+            modal.classList.add('zoomIn');
+        }, 500);
+    }
+}); 

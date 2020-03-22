@@ -12,16 +12,14 @@ $black: #000000;
 
 .section-title {
     margin-bottom: 25px;
-
     h2 {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 800;
     }
-
 }
 
 section {
-    padding: 2rem 0;
+    padding: 50px 0;
 }
 
 span {
@@ -40,23 +38,44 @@ p {
     font-weight: 600;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    color: $white;
+    background: $light-red;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px 29px;
+    box-shadow: 0px 5px 12px $button-shadow;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 .main {
     color: $light-grey;
 
     .introducing {
-        padding: 2rem 0;
+        
         background: url(../img/introducing/Самурай.svg) no-repeat top right 20%;
 
         .container {
             .introducing-text {
                 h2 {
-                    font-size: 35px;
-                    font-weight: 800;
                     margin-bottom: 50px;
                 }
 
                 p {
-                    max-width: 32%;
+                    max-width: 41%;
                 }
             }
         }
@@ -108,7 +127,8 @@ p {
         .container {
             .portfolio-text {
                 p {
-                    margin-bottom: 25px;
+                    max-width: 51%;
+                    margin-bottom: 50px;
                 }
             }
 
@@ -117,7 +137,7 @@ p {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    padding: 15px 17px;
                     img {
                         margin-left: 23px;
                     }
@@ -132,77 +152,107 @@ p {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
             }
-
             .price-list {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
+                max-width: 1000px;
+                margin: auto;
 
                 &__item {
                     background: $price-bg;
                     box-shadow: 1px 4px 20px rgba(65, 64, 66, 0.09);
                     border-radius: 50px;
-                    min-width: 340px;
-                    min-height: 455px;
-                    padding: 45px 38px 10px;
-                    margin: 50px;
+                    max-width: 270px;
+                    padding: 45px 40px;
+                    margin: 0 86px 60px 0;
                     position: relative;
 
                     .cost {
-                        font-size: 25px;
-
+                        font-size: 30px;
+                        min-height: 80px;
                         span {
-                            font-size: 22px;
+                            font-size: 21px;
                         }
                     }
 
                     .type {
                         color: #D6D6D6;
                         margin-bottom: 18px;
+                        min-height: 50px;
                     }
 
                     ul {
-                        min-height: 208px;
-
-                        li {
-                            font-size: 18px;
-                            margin-bottom: 8px;
-                        }
-
+                        min-height: 252px;               
                         li {
                             display: flex;
-                            justify-content: flex-start;
+                            justify-content: space-between;
                             align-items: center;
                             position: relative;
-                        }
-
-                        li:before {
-                            position: absolute;
-                            top: 8px;
-                            margin: 8px 0 0 -12px;
-                            vertical-align: middle;
-                            display: inline-block;
-                            width: 4px;
-                            height: 4px;
-                            background: #ccc;
-                            content: "";
-                        }
+                            font-size: 18px;
+                            margin-bottom: 8px;
+                            &::before {
+                                position: absolute;
+                                top: 8px;
+                                left: -10px;
+                                width: 4px;
+                                height: 4px;
+                                background: $light-red;
+                                content: "";
+                            }
+                        }      
                     }
 
                     .price-button {
-                        margin: 24px 0;
+                        margin: 40px 0;
+                        font-size: 17px;
+                        padding: 10px 20px;
                     }
 
                     .deadline {
                         color: $deadline-color;
                     }
 
-                    &:last-child {
+                    &:nth-child(2) {
                         img {
-                            bottom: -125px;
-                            right: -14px;
+                            bottom: -40px;
+                            right: -50px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        margin-right: 0;
+                    }
+
+                    &:last-child {
+                        min-width: 100%;
+                        min-height: 0;
+                        margin-right: 60px;
+                        margin-bottom: 0;
+                        ul {
+                            min-height: 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            li {
+                                margin-right: 20px;
+                                &::before {
+                                    top: 8px;
+                                }
+                            }
+                        }
+
+                        .price-button {
+                            position: absolute;
+                            top: 0;
+                            right: 44px;
+
+                        }
+
+                        img {
+                            bottom: -118px;
+                            right: -61px;
                         }
                     }
 
@@ -218,7 +268,6 @@ p {
 
     .reasons {
         padding: 4rem 0 2rem;
-
         .container {
             .section-title {
                 display: flex;
@@ -244,6 +293,11 @@ p {
                         }
 
                     }
+                    &-image {
+                        img {
+                            max-width: calc(100% - 2%);
+                        }
+                    }
 
                 }
             }
@@ -256,7 +310,6 @@ p {
             justify-content: center;
             align-items: center;
             .qav {
-                
                 font-size: 150px;
                 color: $light-red;
             }
@@ -292,7 +345,7 @@ p {
                     cursor: pointer;
                 }
                 .review-window {
-                    border: 1px solid blue;
+                    border: 1px solid $light-grey;
                     width: 830px;
                     height: 400px;
                     margin: auto;
@@ -304,7 +357,6 @@ p {
                     display: flex;  
                     border-radius: 50px;
                     .review {
-                        
                         min-width: 830px;
                         height: 400px;
                         background: $body-bg;
@@ -314,7 +366,7 @@ p {
                         justify-content: center;
                         align-items: center;
                         &:first-child {
-                            z-index: 99;
+                            z-index: 98;
                         }
                     }
                 }  
@@ -323,36 +375,28 @@ p {
     }
 
     .feedback {
-        background: url(../img/feedback/речка.svg) no-repeat top right 12%;
+        background: url(../img/feedback/речка.svg) no-repeat top 40% right 12%;
         padding: 2rem 0 4rem;
         .container {
             .feedback-form {
                 .form {
                     &-input {
-                        font-family: 'Montserrat', sans-serif;
-                        
+                        font-family: 'Montserrat', sans-serif;                       
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                         border: none;
                         border-bottom: 1px solid $light-grey;
                         font-size: 16px;
+                        background: transparent;
                         padding-bottom: 25px;
                         outline: none;
-                        margin-bottom: 20px;
-                        min-width: 40%;
-                        &::placeholder {
-                            color: $black;
-                        }
-                    }
-                    &-button {
-                        padding: 15px 70px;
+                        margin-bottom: 50px;       
                     }
                 }
             }
         }
     }
-
 }
 
 .form {
@@ -371,9 +415,6 @@ p {
         &::placeholder {
             color: $black;
         }
-    }
-    &-button {
-        padding: 15px 70px;
     }
 }
 

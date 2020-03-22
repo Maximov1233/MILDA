@@ -31,19 +31,19 @@ a {
     color: inherit;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 90%;
-    }
-}
-
 .hide {
     display: none;
+    width: 0px;
+    height: 0px;
 }
 
 .ov-h {
     overflow: hidden;
-    overflow-y: scroll;
+}
+
+.visible {
+    width: 100%;
+    height: 100%;
 }
 
 button {
@@ -53,8 +53,8 @@ button {
     color: $white;
     background: $light-red;
     font-weight: 600;
-    font-size: 20px;
-    padding: 10px 15px;
+    font-size: 24px;
+    padding: 20px 29px;
     box-shadow: 0px 5px 12px $button-shadow;
     border-radius: 50px;
     cursor: pointer;
@@ -63,17 +63,14 @@ button {
 body {
     background: $body-bg;
     font-family: 'Montserrat', sans-serif;
-
     .container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: auto;
     }
 
     .header {
-        padding: 2rem 0;
+        padding: 25px 0;
         background: url(../img/header-right.svg) no-repeat top 10% right 10%;
 
         .container {
@@ -118,15 +115,14 @@ body {
             }
 
             .header-content {
+                margin-bottom: 150px;
                 .offer {
                     color: $light-grey;
                     font-size: 20px;
-                    margin-bottom: 360px;
-
                     h1 {
-                        max-width: 51%;
+                        max-width: 75%;
                         font-weight: 800;
-                        margin-bottom: 30px;
+                        margin-bottom: 50px;
 
                         span {
                             color: $light-red;
@@ -134,8 +130,8 @@ body {
                     }
 
                     p {
-                        max-width: 36%;
-                        margin-bottom: 20px;
+                        max-width: 48%;
+                        margin-bottom: 50px;
                         color: $light-grey;
                         font-weight: 600;
                     }
@@ -158,24 +154,32 @@ body {
         }
 
         .header-modal {
-            width: 50%;
-            height: 800px;
+            width: 80%;
+            margin: auto;
+            // height: 800px;
             background: $body-bg;
-            position: absolute;
-            top: 47%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            // position: absolute;
+            // top: 0px;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
-            padding: 3%;
+            justify-content: space-between;
+            padding: 40px 90px;
             box-shadow: 20px 20px 50px rgba(65, 64, 66, 0.25);
             border-radius: 50px 0px 0px 50px;
             position: relative;
+            
             .header-nav {
+                display: block;
+                margin: auto;
+                margin-left: 0;
                 ul {
                     li {
                         margin-bottom: 5px;
+                        border-bottom: 2px solid $button-shadow;
+                        padding-bottom: 3px;
                         h2 {
                             font-size: 30px;
                             font-weight: 800;
@@ -200,6 +204,7 @@ body {
                     min-width: 100%;
                     &-input {
                         min-width: 100%;
+                        background: none;
                     }
                     &-button {
                         display: block;
@@ -212,6 +217,7 @@ body {
                 top: 5%;
                 right: 5%;
                 cursor: pointer;
+                color: red;
             }
             &__bg {
                 position: fixed;
@@ -219,8 +225,11 @@ body {
                 height: 100vh;
                 top: 0;
                 left: 0;
+                right: 0;
+                bottom: 0;
                 background: rgba(0, 0, 0, 0.5);
-                overflow: hidden;
+                // overflow: hidden;
+                z-index: 99;
             }
         }
     }
